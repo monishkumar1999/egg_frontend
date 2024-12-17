@@ -1,28 +1,18 @@
-<<<<<<< HEAD
 import "./App.css";
 import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="flex">
-      <Sidebar />
+    <div className="flex ">
+      {/* Sidebar with 1/3 width */}
+      <div className="1/4">
+        <Sidebar />
+      </div>
 
-      <div className="pl-5">gome page</div>
-=======
-
-import './App.css'
-
-function App() {
-  return (
-    <div className="bg-blue-500 text-white text-4xl h-screen flex items-center justify-center">
-      Hello, Tailwind!
->>>>>>> 9dc0d0607ba24766a42ba4476ce6896c0bd99949
+      {/* Main content area */}
+     <div>main content</div>
     </div>
   );
 }
 
-<<<<<<< HEAD
 export default App;
-=======
-export default App
->>>>>>> 9dc0d0607ba24766a42ba4476ce6896c0bd99949
