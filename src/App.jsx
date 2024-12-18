@@ -7,10 +7,13 @@ function App() {
       {/* Sidebar with 1/3 width */}
       <div className="1/4">
         <Sidebar />
+       
       </div>
 
       {/* Main content area */}
-     <div>main content</div>
+     <div>main content
+   
+     </div>
     </div>
   );
 }
