@@ -69,7 +69,7 @@ function Sidebar() {
                       return (
                         <li
                           key={index}
-                          className="cursor-pointer hover:bg-gray-100 pl-10 py-3 rounded-lg font-bold text-gray-500"
+                          className="cursor-pointer hover:bg-gray-100 pl-10 py-3 rounded-lg font-bold text-gray-500 duration-1000"
                         >
                           {subMenus.title}
                         </li>
