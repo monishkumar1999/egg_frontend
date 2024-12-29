@@ -1,9 +1,10 @@
  import React from 'react'
+import { Link } from 'react-router-dom'
  
  function Body() {
    return (
      <div className='bg-gray-500 w-screen'>
-       main 
+   <Link to={"/contact"} >click</Link>
      </div>
    )
  }

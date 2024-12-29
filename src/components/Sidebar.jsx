@@ -2,12 +2,15 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import { HiArrowLongDown } from "react-icons/hi2";
+import { Link,useLocation } from "react-router-dom";
 
 function Sidebar() {
   const [isopen, setOpen] = useState(true);
   const [submenuOpen, setsubmenuOpen] = useState(true);
   const [Menus, setmenu] = useState([]);
-
+  const location = useLocation();
+  const [activeMenu,setActiveMenu]=useState(null);
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -50,18 +53,23 @@ function Sidebar() {
           {Menus.map((value, index) => {
             return (
               <>
-                <li
-                  className="bg-transparent rounded relative hover:bg-slate-50 font-bold text-gray-500 h-11 pl-8 pt-2"
-                  onClick={() => {
-                    toggleSubmenu(index);
-                  }}
-                >
-                  {value.title}
+               <li
+  className="bg-transparent rounded relative hover:bg-slate-50 font-bold text-gray-500 h-11 pl-8 pt-2"
+  onClick={() => {
+    toggleSubmenu(index);
+  }}
+>
+  {value.isUrl ? (
+    <Link to={value.mainUrl}>{value.title}</Link>
+  ) : (
+    value.title
+  )}
 
-                  {value.submenu && (
-                    <HiArrowLongDown className="absolute right-0 -translate-y-5" />
-                  )}
-                </li>
+  {value.submenu && (
+    <HiArrowLongDown className="absolute right-0 -translate-y-5" />
+  )}
+</li>
+
 
                 {value.submenu && submenuOpen[index] && (
                   <ul>
