@@ -44,9 +44,9 @@ function Sidebar() {
 
   return (
     <div
-      className={`p-4 h-screen relative ${
-        isOpen ? "w-72" : "w-32 "
-      } ease-in-out duration-500 bg-gray-100 shadow-lg`}
+      className={`p-4 h-screen relative  z-20 ${
+        isOpen ? "w-55" : "w-32 "
+      } ease-in-out duration-500 bg-white shadow-lg`}
     >
       {/* Sidebar Toggle Button */}
       <div
