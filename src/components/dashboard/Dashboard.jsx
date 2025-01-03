@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 import React from 'react';
 import Cards from './Card';
+import TodayLine from './TodayLine';
 
 function Dashboard() {
   return (
@@ -12,8 +13,7 @@ function Dashboard() {
         <Cards />
       </div>
       {/* New Section - Full Row Section */}
-      <div className="w-full shadow-2xl  rounded-lg mt-6 h-36">d
-      </div>
+      <TodayLine/>
     </div>
     
     </>

@@ -37,7 +37,7 @@ const Cards = () => {
 
       <div className="bg-pink-100 h-44 rounded-lg shadow-lg flex flex-col justify-between p-4">
         <img src="/public/image/monthly_stock.png" alt="" className="w-20 -mt-2"/>
-        <div className="font-bold text-lg text-pink-900 -mt-2">Monthly Revenue</div>
+        <div className="font-bold text-lg text-pink-900 -mt-2">Monthly Load</div>
         <div className="text-3xl font-bold text-pink-800">1,200</div>
       </div>
     </>
